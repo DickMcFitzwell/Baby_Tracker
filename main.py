@@ -3,23 +3,11 @@ import os
 import sqlite3
 from tabulate import tabulate
 
+
 def main():
     initial_setup()
-    action = input("Start a \"bottle\" or change a \"diaper\"? Or \"view\" bottles?\n").strip().lower()
-    if action == "bottle":
-        bottle_id, start_time_obj = start_bottle()
-        input("Press enter to finish feeding...\n")
-        end_bottle(bottle_id, start_time_obj)
-    elif action == "diaper":
-        print("Coming soon!")
-    elif action == "view":
-        view_bottles()
-    else:
-        print("Invalid input")
-
-
-# Class Definitions
-
+    get_action()
+    
 
 # Function Definitions
 
@@ -68,6 +56,20 @@ def end_bottle(current_id, start_time_obj):
     print("")
     print(f"Bottle finished at {end_time_str}. Duration {duration_str}")
     print(f"Notes: {bottle_notes}\n")
+
+
+def get_action():
+    action = input("Start a \"bottle\" or change a \"diaper\"? Or \"view\" bottles?\n").strip().lower()
+    if action == "bottle":
+        bottle_id, start_time_obj = start_bottle()
+        input("Press enter to finish feeding...\n")
+        end_bottle(bottle_id, start_time_obj)
+    elif action == "diaper":
+        print("Coming soon!")
+    elif action == "view":
+        view_bottles()
+    else:
+        print("Invalid input")
 
 
 def initial_setup():
