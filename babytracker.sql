@@ -1,11 +1,7 @@
-CREATE TABLE IF NOT EXISTS diaper (
+CREATE TABLE IF NOT EXISTS bath (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     date TEXT NOT NULL,
     time TEXT NOT NULL,
-    excrement TEXT NOT NULL,
-    color TEXT,
-    consistency TEXT,
-    rash_level INTEGER,
     notes TEXT
 );
 
@@ -17,5 +13,16 @@ CREATE TABLE IF NOT EXISTS bottle (
     duration TEXT,
     ounces FLOAT NOT NULL,
     contents TEXT,
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS diaper (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT NOT NULL,
+    time TEXT NOT NULL,
+    excrement TEXT NOT NULL,
+    color TEXT,
+    consistency TEXT,
+    rash_level INTEGER NOT NULL,
     notes TEXT
 );

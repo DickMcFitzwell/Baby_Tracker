@@ -1,3 +1,10 @@
+Version 0.2
+added change_diaper function
+updated diaper table
+temporarily changed view function to show both tables
+added give_bath function
+added bath table
+
 Version 0.1
 completed schema
 completed bottle inputs and error checking for user input
