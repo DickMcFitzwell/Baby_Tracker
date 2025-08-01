@@ -1,8 +1,6 @@
 Short Term:
-add medicine table
-add drs appointment table
-program a way for user to make automated sql queries to view data
+-program a way for user to make automated sql queries to view data
 
 Long Term:
-Make GUI
-Make Standalone version - target iphone
+-Make GUI
+-Make Standalone version - target iphone

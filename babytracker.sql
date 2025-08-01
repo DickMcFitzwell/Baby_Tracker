@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS bottle (
     duration TEXT,
     ounces FLOAT NOT NULL,
     contents TEXT,
+    progress TEXT,
     notes TEXT
 );
 
@@ -25,4 +26,27 @@ CREATE TABLE IF NOT EXISTS diaper (
     consistency TEXT,
     rash_level INTEGER NOT NULL,
     notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS doctor (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT NOT NULL,
+    time TEXT NOT NULL,
+    regular_checkup BOOLEAN NOT NULL,
+    symptom TEXT,
+    height INTEGER,
+    weight INTEGER,
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS medicine (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT NOT NULL,
+    time TEXT NOT NULL,
+    medicine TEXT NOT NULL,
+    dose TEXT NOT NULL,
+    reason TEXT,
+    notes TEXT,
+    effectiveness TEXT,
+    final_notes TEXT
 );

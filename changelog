@@ -1,12 +1,21 @@
+Version 0.3
+-added medicine table
+-added doctors appointment table
+-refactored get_action function into match case instead of repeated if else
+-added function to log doctors appointments
+-added function to log medicine
+-added function to update medicine log later with effectiveness and final notes
+-split bottle function into 2 separate calls so program can be closed during feeding, then finished later
+
 Version 0.2
-added change_diaper function
-updated diaper table
-temporarily changed view function to show both tables
-added give_bath function
-added bath table
+-added change_diaper function
+-updated diaper table
+-temporarily changed view function to show both tables
+-added give_bath function
+-added bath table
 
 Version 0.1
-completed schema
-completed bottle inputs and error checking for user input
-implemented view function to see all bottles in a table
-started documentation files
+-completed schema
+-completed bottle inputs and error checking for user input
+-implemented view function to see all bottles in a table
+-started documentation files
