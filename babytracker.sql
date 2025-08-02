@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS doctor (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     date TEXT NOT NULL,
     time TEXT NOT NULL,
-    regular_checkup BOOLEAN NOT NULL,
+    regular_checkup TEXT NOT NULL,
     symptom TEXT,
     height INTEGER,
     weight INTEGER,
@@ -49,4 +49,12 @@ CREATE TABLE IF NOT EXISTS medicine (
     notes TEXT,
     effectiveness TEXT,
     final_notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS milestones (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT NOT NULL,
+    time TEXT NOT NULL,
+    milestone TEXT NOT NULL,
+    notes TEXT NOT NULL
 );

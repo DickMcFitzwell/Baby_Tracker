@@ -1,3 +1,10 @@
+Version 0.4
+-added milestones table and function
+-changed view tables function to show the user any table requested
+-refactored diaper function, just smells better now, no pun intended
+-general consistency changes, mainly with quotation marks
+-added functionality to wrap long text in columns
+
 Version 0.3
 -added medicine table
 -added doctors appointment table

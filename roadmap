@@ -1,5 +1,5 @@
 Short Term:
--program a way for user to make automated sql queries to view data
+print names of columns from sql tables every 10 rows
 
 Long Term:
 -Make GUI
